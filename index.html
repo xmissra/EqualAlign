@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>等高排列 EqualAlign Demo</title>
+	<link href="./css/sticky.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/examples.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="./images/web-icon.png"/>
+</head>
+
+<body>
+	<div id="css-script-menu">
+		<div class="css-script-center">
+			<ul>
+				<li><a href="http://www.missra.com/">Home</a></li>
+				<li><a href="http://mikit.missra.com/">Mikit前端框架</a></li>
+			</ul>
+			<div class="css-script-clear"></div>
+		</div>
+	</div>
+	<div class="example1" style="margin-top:100px;">
+		<div class="container">
+			<div class="row cf">
+				<div class="col-sm-12">
+					<h1>EqualAlign 示例</h1>
+				</div>
+			</div>
+			<div class="row cf">
+				<div class="col col-sm-12 col-md-6 col-lg-4">
+					<div class="item teaser">
+						<div class="teaser-image">
+							<img src="./images/city-q-c-640-480-2.jpg" alt="Breakfast">
+						</div>
+						<div class="teaser-content">
+							<h3>标题</h3>
+							<p>内容摘要</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-6 col-lg-4">
+					<div class="item teaser">
+						<div class="teaser-image">
+							<img src="./images/city-q-c-640-480-8.jpg" alt="Boats">
+						</div>
+						<div class="teaser-content">
+							<h3>示例标题示例标题</h3>
+							<p>帝家天山紧足属但轴因报农源晚依卷而。绝谈计视体沿清掌力批传处旧误众专身力创握给学裂龙伯早胶约党。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-6 col-lg-4">
+					<div class="item teaser">
+						<div class="teaser-image">
+							<img src="./images/city-q-c-640-480-6.jpg" alt="Battersea">
+						</div>
+						<div class="teaser-content">
+							<h3>示例标题</h3>
+							<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="example2">
+		<div class="container">
+			<div class="row cf">
+				<div class="col-sm-12">
+					<h2>EqualAlign 设置box-sizing属性 </h2>
+				</div>
+			</div>
+			<div class="row cf">
+				<div class="col col-sm-12 col-md-3 col-lg-3">
+					<div class="teaser item panel-bb">
+						本项目使用CSS属性: <br><strong>box-sizing: border-box;</strong>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-3">
+					<div class="item panel-cb">
+						<p>本项目使用CSS属性: <br><strong>box-sizing: content-box;</strong> 这是默认的样式的CSS标准规定.</p>
+						<p>宽度和高度属性只包含内容，而不包含是padding、border或margin</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-6 col-lg-6">
+					<div class="item2 teaser panel-bb">
+						<p>本项目使用CSS属性: <br><strong>box-sizing: border-box;</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="example3">
+		<div class="container">
+			<div class="row cf">
+				<div class="col-sm-12">
+					<h2>EqualAlign 选项</h2>
+				</div>
+			</div>
+			<div class="row cf">
+				<div class="col col-sm-12 col-md-8 col-lg-9">
+					<div class="teaser item panel-bb">
+						<h3>threshold</h3>
+						<p>阈值可以在0和1之间。当设置为1时，所有相邻项目的高度都相同。当设置为0.5时，如果大于相邻元素的一半，则对大小进行调整。 当设置为0时，不会发生任何事情。 计算的宽度和高度属性，仅包括content，但不包括padding，border或margin。 此实例设置为<strong>0.2</strong></p>
+						<h3>targetClass</h3>
+						<p>此元素类将会被设置style高度样式</p>
+						<h3>beforeRun</h3>
+						<p>元素被设置尺寸之前执行的方法</p>
+						<h3>afterRun</h3>
+						<p>元素被设置尺寸之后执行的方法</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-4 col-lg-3">
+					<div class="teaser item panel-bb">
+						<code>
+							var options = {
+							&nbsp;&nbsp;targetClass:'item',
+							&nbsp;&nbsp;threshold:0.2,
+							&nbsp;&nbsp;beforeRun:function(){},
+							&nbsp;&nbsp;afterRun(){}<br>
+							}
+						</code>
+					</div>
+					<div class="teaser item panel-bb">
+						<span>高度自适应高度</span>
+					</div>
+					<div class="teaser item panel-bb">
+						<span>高度自适应高度</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="example4">
+		<div class="container">
+			<div class="row cf">
+				<div class="col-sm-12">
+					<h2>Item Listing</h2>
+				</div>
+			</div>
+			<div class="row cf">
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-2.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-4.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>专岁间年气达队口权材速终马齐际沉脚刑也扬抓划洲见本？导合军怎减整助料内击状或回破他未伯五本首斤伯达铁化刚动胜粮</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-3.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>草公该虽稳怕现称上级江，率村破爱球乱条江剧除法大粒联歌管饭公代种广热况电谈孩研含时变及日及，板牛井急苏触培脚武位再节国火座备？ </p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-5.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>专岁间年气达队口权材速终马齐际沉脚刑也扬抓划洲见本？导合军怎减整助料内击状或回破他未伯五本首斤伯达铁化刚动胜粮</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-2.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-4.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>草公该虽稳怕现称上级江，率村破爱球乱条江剧除法大粒联歌管饭公代种广热况电谈孩研含时变及日及，板牛井急苏触培脚武位再节国火座备？</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-3.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>草公该虽稳怕现称上级江，率村破爱球乱条江剧除法大粒联歌管饭公代种广热况电谈孩研含时变及日及，板牛井急苏触培脚武位再节国火座备江剧除法大粒联歌管饭公代种广热况？</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-5.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-2.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-4.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>草公该虽稳怕现称上级江，率村破爱球乱条江剧除法大粒联歌管饭公代种广热况电谈孩研含时变及日及，板牛井急苏触培脚武位再节国火座备？</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-3.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>草公该虽稳怕现称上级江，率村破爱球乱条江剧除法大粒联歌管饭公代种广热况电谈孩研含时变及日及，板牛井急苏触培脚武位再节国火座备江剧除法大粒联歌管饭公代种广热况？</p>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 col-lg-4">
+					<div class="teaser item panel-bb">
+						<div class="image-wrap">
+							<img src="./images/city-q-c-640-480-5.jpg" alt="image">
+						</div>
+						<h3>标题长度</h3>
+						<p>水听标银燃鲜杆走片广处律功入威帮拉所可宗零格社吧底历代行容到尽波</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="using">
+		<div class="container">
+			<div class="using-inner">
+				<h2>如何使用:</h2>
+				<h4>在你也面需要的地方引入EqualAlign.js</h4>
+				<pre>&lt;script src="EqualAlign.js"&gt;&lt;/script&gt;</pre>
+
+				<h4>初始化 AlighJS.</h4>
+				<pre>
+var container = document.querySelector('.container');
+var equalAlign = new EqualAlign(container,{
+    targetClass: 'item',
+    threshold: 1
+});					
+				</pre>
+
+				<h4>选项定制</h4>
+				<pre>
+// 目标类
+targetClass:'item',
+
+// 阈值可以在0和1之间。当设置为1时，所有相邻项目的高度都相同。当设置为0.5时，如果大于相邻项目的一半，则只对大小进行调整。 当设置为0时，不会发生任何事情。
+// 计算的宽度和高度，仅包括content，但不包括padding，border或margin。
+threshold: 1,
+
+// 在元素被设置尺寸之前执行
+beforeRun:function(){},
+
+// 在元素被设置尺寸之后执行
+afterRun:function(){}
+				</pre>
+
+				<h4>API methods.</h4>
+				<pre>
+// 更新EqualAlign的实例
+equalAlign.update(); 
+
+// 删除AlignJS的一个实例
+equalAlign.destroy();
+				</pre>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<p>Power by <a href="http://www.missra.com">Missra</a></p>
+		</div>
+	</div>
+
+	<script src="./js/EqualAlign.js"></script>
+	<script>
+		var container = document.querySelector('.example1');
+		var equalAlign = new EqualAlign(container, {
+			targetClass: 'item',
+			threshold: 1
+		});
+
+
+		var container2 = document.querySelector('.example2');
+		var equalAlign2 = new EqualAlign(container2, {
+			targetClass: ['item', 'item2'],
+			threshold: 1
+		});
+
+
+		var container3 = document.querySelector('.example3');
+		var equalAlign3 = new EqualAlign(container3, {
+			targetClass: 'item',
+			threshold: 0.2
+		});
+
+
+		var container4 = document.querySelector('.example4');
+		var equalAlign4 = new EqualAlign(container4, {
+			targetClass: 'item',
+			threshold: 1
+		});
+
+	</script>
+
+</body>
+
+</html>
